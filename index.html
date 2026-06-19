@@ -894,8 +894,8 @@ nav {
 }
 .resume-section-label {
   font-family: 'Inter', sans-serif;
-  font-size: 12px;
-  font-weight: 600;
+  font-size: 15px;
+  font-weight: 700;
   letter-spacing: 0.125px;
   text-transform: uppercase;
   color: var(--coral);
@@ -923,7 +923,7 @@ nav {
 }
 .resume-company-name {
   font-family: 'Inter', sans-serif;
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 700;
   letter-spacing: -0.25px;
   color: var(--ink);
@@ -945,10 +945,10 @@ nav {
 }
 .resume-role-title {
   font-family: 'Inter', sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 700;
-  letter-spacing: -0.125px;
-  color: var(--ink);
+  letter-spacing: 0;
+  color: #213183;
 }
 .resume-role-dates {
   font-family: 'Inter', sans-serif;
@@ -1089,11 +1089,15 @@ nav {
 }
 .resume-subgroup-title {
   font-family: 'Inter', sans-serif;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 600;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-  color: var(--coral);
+  letter-spacing: 0;
+  text-transform: none;
+  color: #000;
+  background: rgba(0,117,222,0.08);
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 4px;
   margin-bottom: 10px;
 }
 
@@ -1358,6 +1362,20 @@ nav {
 
 @media (max-width: 768px) {
   #ai-portfolio .portfolio-wrap { padding: 40px 20px 80px; }
+}
+.resume-bullets-structured li {
+  display: list-item;
+  list-style: disc;
+  margin-left: 18px;
+}
+.resume-bullets-structured li::before { display: none; }
+.rb-label {
+  font-family: 'Inter', sans-serif;
+  font-size: 14.5px;
+  font-weight: 700;
+  color: var(--ink);
+  display: inline;
+  margin-right: 6px;
 }
 </style>
 </head>
@@ -1901,7 +1919,7 @@ nav {
         <h2 class="resume-name">Ayushi Goel</h2>
         <p class="resume-contact">Menlo Park, CA &nbsp;·&nbsp; +1 628-842-6726 &nbsp;·&nbsp; goelayushin@gmail.com &nbsp;·&nbsp; <a href="https://linkedin.com/in/goelayushi" target="_blank">linkedin.com/in/goelayushi</a></p>
       </div>
-      <a class="resume-download" href="data:application/pdf;base64,JVBERi0xLjQKJZOMi54gUmVwb3J0TGFiIEdlbmVyYXRlZCBQREYgZG9jdW1lbnQgKG9wZW5zb3VyY2UpCjEgMCBvYmoKPDwKL0YxIDIgMCBSIC9GMiAzIDAgUiAvRjMgNCAwIFIgL0Y0IDUgMCBSCj4+CmVuZG9iagoyIDAgb2JqCjw8Ci9CYXNlRm9udCAvSGVsdmV0aWNhIC9FbmNvZGluZyAvV2luQW5zaUVuY29kaW5nIC9OYW1lIC9GMSAvU3VidHlwZSAvVHlwZTEgL1R5cGUgL0ZvbnQKPj4KZW5kb2JqCjMgMCBvYmoKPDwKL0Jhc2VGb250IC9UaW1lcy1Sb21hbiAvRW5jb2RpbmcgL1dpbkFuc2lFbmNvZGluZyAvTmFtZSAvRjIgL1N1YnR5cGUgL1R5cGUxIC9UeXBlIC9Gb250Cj4+CmVuZG9iago0IDAgb2JqCjw8Ci9CYXNlRm9udCAvSGVsdmV0aWNhLUJvbGQgL0VuY29kaW5nIC9XaW5BbnNpRW5jb2RpbmcgL05hbWUgL0YzIC9TdWJ0eXBlIC9UeXBlMSAvVHlwZSAvRm9udAo+PgplbmRvYmoKNSAwIG9iago8PAovQmFzZUZvbnQgL1RpbWVzLUJvbGQgL0VuY29kaW5nIC9XaW5BbnNpRW5jb2RpbmcgL05hbWUgL0Y0IC9TdWJ0eXBlIC9UeXBlMSAvVHlwZSAvRm9udAo+PgplbmRvYmoKNiAwIG9iago8PAovQ29udGVudHMgMTEgMCBSIC9NZWRpYUJveCBbIDAgMCA2MTIgNzkyIF0gL1BhcmVudCAxMCAwIFIgL1Jlc291cmNlcyA8PAovRm9udCAxIDAgUiAvUHJvY1NldCBbIC9QREYgL1RleHQgL0ltYWdlQiAvSW1hZ2VDIC9JbWFnZUkgXQo+PiAvUm90YXRlIDAgL1RyYW5zIDw8Cgo+PiAKICAvVHlwZSAvUGFnZQo+PgplbmRvYmoKNyAwIG9iago8PAovQ29udGVudHMgMTIgMCBSIC9NZWRpYUJveCBbIDAgMCA2MTIgNzkyIF0gL1BhcmVudCAxMCAwIFIgL1Jlc291cmNlcyA8PAovRm9udCAxIDAgUiAvUHJvY1NldCBbIC9QREYgL1RleHQgL0ltYWdlQiAvSW1hZ2VDIC9JbWFnZUkgXQo+PiAvUm90YXRlIDAgL1RyYW5zIDw8Cgo+PiAKICAvVHlwZSAvUGFnZQo+PgplbmRvYmoKOCAwIG9iago8PAovUGFnZU1vZGUgL1VzZU5vbmUgL1BhZ2VzIDEwIDAgUiAvVHlwZSAvQ2F0YWxvZwo+PgplbmRvYmoKOSAwIG9iago8PAovQXV0aG9yIChcKGFub255bW91c1wpKSAvQ3JlYXRpb25EYXRlIChEOjIwMjYwNjE3MjIzNTA1KzAwJzAwJykgL0NyZWF0b3IgKFwodW5zcGVjaWZpZWRcKSkgL0tleXdvcmRzICgpIC9Nb2REYXRlIChEOjIwMjYwNjE3MjIzNTA1KzAwJzAwJykgL1Byb2R1Y2VyIChSZXBvcnRMYWIgUERGIExpYnJhcnkgLSBcKG9wZW5zb3VyY2VcKSkgCiAgL1N1YmplY3QgKFwodW5zcGVjaWZpZWRcKSkgL1RpdGxlIChcKGFub255bW91c1wpKSAvVHJhcHBlZCAvRmFsc2UKPj4KZW5kb2JqCjEwIDAgb2JqCjw8Ci9Db3VudCAyIC9LaWRzIFsgNiAwIFIgNyAwIFIgXSAvVHlwZSAvUGFnZXMKPj4KZW5kb2JqCjExIDAgb2JqCjw8Ci9GaWx0ZXIgWyAvQVNDSUk4NURlY29kZSAvRmxhdGVEZWNvZGUgXSAvTGVuZ3RoIDI3OTkKPj4Kc3RyZWFtCkdhdUhNPyQiXmooNEdxXFwuPid0bGldJD0hKD5wWyk0TlVXMjQrQjNmaTYzaCw7bWlRVXQyb0tHYXNRZm07b2pDJmwsWmBaWU5JPCQ8VyY7cFooJU1jWVlibmBCVkVAKyFzQ2ovRXVlZDZdT2dfMiokLStWclxZUVFSQDlTMzdUQydJNjhLL2graUpSaS1FQi0lWUxvW1NhT2pLUyxmYUZfIlNnSFJoSFdbKVotYidecFptUlRQXSVZW2V0L2Y9NjxeUShRdWk9VXViKk1yaUFuQkxPV1slZkg1RzRNLWxfPW9YJiZJMzMkNytsM0QraXBzdEZibWdtIkMrXlUuOEUvUyR0R1QnNUQwbTFzPlpPcjxbcS45NmlMWUVudW5VVGhnNltebiwjSlNzXCYpQDBDMDVNMTAxUWVPNmcqQkExU1BVWWdeRDtiIkwuPEg8VDA9IlNsLUBNKGddUlkwMlMhZmcqbzVoYl5IUGhmcThHcD9eNzo5TCotUFQiTWVWXlNmbV5bb2dCamwySDlFKSxXOGUjM2xoMHQvbStRM0VeQD5sRWxlbGtaU1MuUVsycmhtOm5wM0AuVTtkI09BMk89KitLMyJRU19ePWskSytkMjVgSVJOZSpAODttdG8sKlJ1IVhBPkwwPztFX1MqXi5zYSojLHJeXS1gNnNKMnJaX3BdUl1yI25HZiVwXVh1TT9MVTBDSzJhYDZPKTFSNC8naUtpWVxAWUk/M2A3KFlqYT5SQC4nSW9PNm08K2hPS29kYUEuOyFnYyVoZ0hBJXBAK2BmKlFkQWF0c29bSlEoUGk9dCgmI1snXzFqXCNJLmo+TT5YSCUjXkdBbTZeKSotQGUwMlc4SzRYOFRQZE5CM0VJWVdYamtmXC04b200Z1Z1ZGBlKy5lK1dDWTEqZkVmIkRDW1giW1JgMC5ja1htTVxCJk8mSCxfanJxUWpfOy4uNC9ZJD1ANm1UY1xAZGVAbiNPRmtaXmUwLFBaNlBOMlxlYHEuQ0RvUEZHQmY2VyNGWEtfJitTLExLQWYwJEdBKGBLaTVGOCY1WGRlLmgiXDRNOUpWP2FKMk1ySTEmITFvSGQuWEVwbGNoNS0zcDpzMURvb1Q9cyRFRVw7RjVGKUgwXkVuUStvVUFPOTRyYmEmQFpsVV0qQiMyJiEqODBZSnMxR2RQRlk1NzUnajA1TEFRTWJhSj8lM0xfXm4xOlIiSy41UTVBaCFdJ0czV1soMTxnZXR0VnFHYXRTO3VjalwhT0c/SktBZyJfL1tkWEBhUUQ/ZiVaNDZbWXVbYT88JVJKYmhSWlM6KUtERT9wSSxUMFUqa1NDKShmLztUNGlTQDE1ay5iJjhfPVdec1w7a2ZiUyZhZyhvRSQpbz5qOU8xNThQO2FhZF1DU1FNPzBAVSYvQlROLThpbkNWUj1mY1BgTC5iSlE6VD5VIW9WdXBkImRJUDtVK2pvXkc7cXA6SUYhNU1odSNzIyw6aTlJcSIoW0U3QjNZUFhxMVFfcEkpZUQ2NSRUZ1AmMi5uSy4vIj1qYkksVmBJJSVDM2VyKGNoK1RIXl9TQkNddUcrVDVCWDclKDRERHROTkxSUzY+aF06U0xwRU9MQDc+QCI/T1lPTCsoPj5WNiFqLiNGXTk+YSs+NmVgSiZfKDtNQTUyOl1Rck5CdTA/Ok5DRnQnZT8zQDYsXCM8SDYmQVRVPCI3KE5HTDFjM18sdE9MZkFYS284UnEjQDpIOFFvLV8/WSVKL0llM18pIWR0bHRXblRGJDYvQnFxOHI5RkZJVz9IYytlU1g3Nz0wcEBNXT9qLVpzRVo9TDMhYEBeNyVVZlxyNjlQbWdBJWAmPnE9Ij8qdWIuTF47MDV1X3JEKyVwUkpVPnA0LHEnRDouUGwsUy87LlNAYTk6TF8yXzkkQzY9MC4kMVpuJU0xKWlxUFsiI2hRKzRKZChyVWZHLlteMyUpb1ImSltFLjc4Q14lOWRhZnAuOEBhaj0nPD9WRi0yLz1Ual0+NzZab0krQ05YQUwkUDVEPTxAITZGVTBtJUM3IzAzZ2Y5PjwyImFrZFtmN088UWs1SmMsT1IwRkZWNU9IUFo9Ji0xW05GP1I/UDpAU1xEQ3FadWpaO3RBM0NbU3NvJktzM2c7MzdmXVltME9tQDlKW18uISxLJ1ssalNRY0wuTGxzVltQQENJdVNock4tKm9NOEsyS19ERSlZQDdLTVtBYGRVWjVRTGVjQ0YjXVNrZjZZZy8wMzBTMjwqWGcrOiRQUTxsPzIxZjcvNXRUNEMpOWJkSEwvVWtJSkRSLE9MblZuaWtbWTRUYzA9I1JDXmg8JjZYPUolKEpqaD1JQEhlSSRUKWpfYkdgZEs3Qmk1WEdLNiY7NEJaX1FadWpYQioiPiMzNWtnW1FFXildUCIyMDVYakonRzVROGZgVF4mY2E5WUZdLEI/MVEobTc+cSdSXSE8KTw+PVdEW1s2WWE+RVtqXVUuTy1QZmQyNEY4WlpAREFvJTdpTV1Aal5vYkMtTk9eJU5YRVhgUzxMMHVtV0FaOkJUKzAjWk9XVjdiXFInPiVvVjVLYSJdKVBLcmMxcTg1QGRLV2IibT1YRXBUNU9iKjYldFQhZyM/TScnOUtFLys4YU5dPkFwU25GSXJbRVc5IWFOYGVpW1tYIjxbNVt1Lld1Z0Y5IWRmKFlNVDEpVC8rbjxxPGRWVnQxbmRrXEIkYHA3ZzshRWY4Y25NU0VKM2NBbEU1biQ/LzxxSTxiOFlzYEQwYlM+PzQjMjgyU0ZRU0dxUmEzNTtCcT9BZmZcSTZldDkjTUxTTz5BUk5nNz9Uak1vM1A3PChbPEhKMzxMWG9pO25uLF0oRCJjUVJmdV4yMzY8aCNwaiVaYVk3ZFlhI0UzYFVgR2xCODI/QVppUTgrNm0vKFgjPm51IUJcP2k8cUNULUg5LmozXUs0MVk2KGgpTkBqaz9NQjNdXFkvOGAsaTFUJTI0O2IwZSg6NEhhX0hsTllKalY/PlEjUW0kYF5mQFthTFo6JGxjP1deOEw+aUc+UyFVWDZyXCk7Vzw/SzNEM0ItZG11J0wiQ2I0XmhTKFVDVWAzQWUoYW8tMTtCJXQ3YF50PmgwLidPMVNEKmkmPV1zVDtTRCY8PjAtbXMhZnMlYVpvRig3QE4nZ2ddPWQnWSNcdTAnQWcydDk3Xmo2MCtoKDsmMnJKOSUrSyEub2VFbS9kQlwxMSEoRm1DRWhZdGBhZTEvSmklK0kzb28lZT0kUjkhWGhCREpaLzJnKlE0MStpXjBZdUM3KiQ5PDtZaz9bUERVOjVsWDdOUVQ1RUZvcilgJ11bUSxrJlN1Rk5FZFgxZz1DOmY+OTVyVXNmLSZHaTxJZGgqUD1Ka1o3a1xsJHNUciFCbT9JJiZmX0ZmQltqZTppQVEvPnE+KjNiVjNZNHMjazlKL0JgOmZrZi02UFRrTzRIVj1TVUU4NUplO05fNSlEIlc7ZGRAVHErLmg8amZwKmluclUpYiwpXzdmaFFqMS9ZZnRYTSlWbWRLQjJXLDtuczRdPlBkNDxTZj4uPGpnSi1JRjNRQTMxXDRjTCIpUyxUJ0U/ZGdOO1ZvMUcrUTNbOU1BS25vU21VKjJsMkJmLSNbMWpWYSUzSjQ9czwqb0lJJSViIj41QGtpRGxcLUxeMm5wYSREKkk5NTgyN1twKF1cMFAjcDo9ODltblcqLURwZGUrKT9+PmVuZHN0cmVhbQplbmRvYmoKMTIgMCBvYmoKPDwKL0ZpbHRlciBbIC9BU0NJSTg1RGVjb2RlIC9GbGF0ZURlY29kZSBdIC9MZW5ndGggNDI0Cj4+CnN0cmVhbQpHYXJuUmFcS2AtJkFANldoUVwyNl1aJS46J0ZHMkFUUnNgSSZzXWc8QUomVmZpcFc5cEJuW0hEOUNaXDNeTU8qNS9KN3VfJnQhdU1oP2pNcF5QOiovX2BxUGtVWClJPjJlLDUiNnFNIlQhVk1sMiQnLSpvTVBcYyc5TldmRk4rTl84UW9PInMoO2xKbFkpbWBPXz1KLmExOnFoRl5ATE87aXUuYiJyLTpmQVRRTnBXJztidVYodUtGWzpZXl09IjojQjpgNVddWGhhTE9pPj0oRWwsWlAiU05fdChXYjIiLChMT0xtPEFBRWdnM0Qsc2pXbWAtJFpXci0mMStrLUZNOkc0V1hLMCYpIUUnKllvNSolQCVJLGZ1XjNbIUpVPkdmUStLYTQ7O2VHRipZNVwmaDdcY2M2KjdYMkRTYHE6KypUV18zS1JiJ0krYkNpWWFtO250IjAyIUxFcS8kZE4mc15FQ3E3bHAsQj1nTEJuO1lJQyRJRnRXX0hPRDliJT0iYVxuUydZPF1xamcyNmA7aypZPU09XSchWm0/J2UpXlcmZzlZNX4+ZW5kc3RyZWFtCmVuZG9iagp4cmVmCjAgMTMKMDAwMDAwMDAwMCA2NTUzNSBmIAowMDAwMDAwMDYxIDAwMDAwIG4gCjAwMDAwMDAxMjIgMDAwMDAgbiAKMDAwMDAwMDIyOSAwMDAwMCBuIAowMDAwMDAwMzM4IDAwMDAwIG4gCjAwMDAwMDA0NTAgMDAwMDAgbiAKMDAwMDAwMDU1OCAwMDAwMCBuIAowMDAwMDAwNzUzIDAwMDAwIG4gCjAwMDAwMDA5NDggMDAwMDAgbiAKMDAwMDAwMTAxNyAwMDAwMCBuIAowMDAwMDAxMjk3IDAwMDAwIG4gCjAwMDAwMDEzNjMgMDAwMDAgbiAKMDAwMDAwNDI1NCAwMDAwMCBuIAp0cmFpbGVyCjw8Ci9JRCAKWzxlZWU2MjcwOTQ1NjVlNjQ2NjA2NDM0MjBmZjk3NzIwMj48ZWVlNjI3MDk0NTY1ZTY0NjYwNjQzNDIwZmY5NzcyMDI+XQolIFJlcG9ydExhYiBnZW5lcmF0ZWQgUERGIGRvY3VtZW50IC0tIGRpZ2VzdCAob3BlbnNvdXJjZSkKCi9JbmZvIDkgMCBSCi9Sb290IDggMCBSCi9TaXplIDEzCj4+CnN0YXJ0eHJlZgo0NzY5CiUlRU9GCg==" download="Ayushi_Goel_Resume.pdf">
+      <a class="resume-download" href="data:application/pdf;base64,JVBERi0xLjQKJZOMi54gUmVwb3J0TGFiIEdlbmVyYXRlZCBQREYgZG9jdW1lbnQgKG9wZW5zb3VyY2UpCjEgMCBvYmoKPDwKL0YxIDIgMCBSIC9GMiAzIDAgUiAvRjMgNCAwIFIKPj4KZW5kb2JqCjIgMCBvYmoKPDwKL0Jhc2VGb250IC9IZWx2ZXRpY2EgL0VuY29kaW5nIC9XaW5BbnNpRW5jb2RpbmcgL05hbWUgL0YxIC9TdWJ0eXBlIC9UeXBlMSAvVHlwZSAvRm9udAo+PgplbmRvYmoKMyAwIG9iago8PAovQmFzZUZvbnQgL0hlbHZldGljYS1Cb2xkIC9FbmNvZGluZyAvV2luQW5zaUVuY29kaW5nIC9OYW1lIC9GMiAvU3VidHlwZSAvVHlwZTEgL1R5cGUgL0ZvbnQKPj4KZW5kb2JqCjQgMCBvYmoKPDwKL0Jhc2VGb250IC9TeW1ib2wgL05hbWUgL0YzIC9TdWJ0eXBlIC9UeXBlMSAvVHlwZSAvRm9udAo+PgplbmRvYmoKNSAwIG9iago8PAovQ29udGVudHMgMTAgMCBSIC9NZWRpYUJveCBbIDAgMCA2MTIgNzkyIF0gL1BhcmVudCA5IDAgUiAvUmVzb3VyY2VzIDw8Ci9Gb250IDEgMCBSIC9Qcm9jU2V0IFsgL1BERiAvVGV4dCAvSW1hZ2VCIC9JbWFnZUMgL0ltYWdlSSBdCj4+IC9Sb3RhdGUgMCAvVHJhbnMgPDwKCj4+IAogIC9UeXBlIC9QYWdlCj4+CmVuZG9iago2IDAgb2JqCjw8Ci9Db250ZW50cyAxMSAwIFIgL01lZGlhQm94IFsgMCAwIDYxMiA3OTIgXSAvUGFyZW50IDkgMCBSIC9SZXNvdXJjZXMgPDwKL0ZvbnQgMSAwIFIgL1Byb2NTZXQgWyAvUERGIC9UZXh0IC9JbWFnZUIgL0ltYWdlQyAvSW1hZ2VJIF0KPj4gL1JvdGF0ZSAwIC9UcmFucyA8PAoKPj4gCiAgL1R5cGUgL1BhZ2UKPj4KZW5kb2JqCjcgMCBvYmoKPDwKL1BhZ2VNb2RlIC9Vc2VOb25lIC9QYWdlcyA5IDAgUiAvVHlwZSAvQ2F0YWxvZwo+PgplbmRvYmoKOCAwIG9iago8PAovQXV0aG9yIChcKGFub255bW91c1wpKSAvQ3JlYXRpb25EYXRlIChEOjIwMjYwNjE5MjIwODA0KzAwJzAwJykgL0NyZWF0b3IgKFwodW5zcGVjaWZpZWRcKSkgL0tleXdvcmRzICgpIC9Nb2REYXRlIChEOjIwMjYwNjE5MjIwODA0KzAwJzAwJykgL1Byb2R1Y2VyIChSZXBvcnRMYWIgUERGIExpYnJhcnkgLSBcKG9wZW5zb3VyY2VcKSkgCiAgL1N1YmplY3QgKFwodW5zcGVjaWZpZWRcKSkgL1RpdGxlIChcKGFub255bW91c1wpKSAvVHJhcHBlZCAvRmFsc2UKPj4KZW5kb2JqCjkgMCBvYmoKPDwKL0NvdW50IDIgL0tpZHMgWyA1IDAgUiA2IDAgUiBdIC9UeXBlIC9QYWdlcwo+PgplbmRvYmoKMTAgMCBvYmoKPDwKL0ZpbHRlciBbIC9BU0NJSTg1RGVjb2RlIC9GbGF0ZURlY29kZSBdIC9MZW5ndGggMjgzMAo+PgpzdHJlYW0KR2F1YUA+QkFRPSghIzUxLkYoOkI8PjFQOEtgb0pDVkdnVnBDaXE6NTEiRFw4LTgvIyIkI1RuNCwkNyljbzhxO1RzJmY9SS9YISEjPi4tOnU7Umk1W2ZBQVUjbyNcZTFuLD8paVU2aUBdcighQ1dKOFVfN08lM11rSTcnQDFjW0w8KUc+Q3RjZD9KKilfUUJXTEZqRj9zWj1lRjRoYWtZMyJYRjZjNm5CZVo9TyxVcV0hM2JTWURnXio5IjJSXm08OixZLWk/KW1tczJWRUlCZTdCX0g+JiNiOHVAOTA6VzRATjVpKz1pSCUtUSFiYXU3ZjJDZGRERkFWK1RTbWs4XCoyTWs1bnBmY0xxYFU0JER0YCozI0crPkY/VCthIyZUJm0+bFEkIUtaWmZBLjFTTS4udCZkRFY+OiszVjRWWzVyM1dgVkNjbi9vYHFsRzo0bEdgbTQxRHFSb2g7dE4iXGgrJlxPU1spJWduMCw/QU0rSG5ST1ppYFxhLigqa3EjMS1nW1ZncWVfai9GRGZzTXFzZVxqXk8jWUpyIWdwTkZhXF07cl1fYmVPI0NeVjsxKDRscilyKzBqM1JiQVBbTU9yNmNnKT5Ybzppay9CXDZOcjVnOWItRUJPIzZEb00qXlc8NEpDUz0wRCRgUm9mLD1PKDRIO085bDlqXk9qPVlhIV9QLiVNXVhgUiQxVm8uM3NuTS1dNDE9Y3IlTkQ9NSJbKWFbNHBsOiwkZTc5NVRiODdqQWM0Wm5TWjhHXClmPGhKVVJeJzUoUkIzZDRQNjRpNUQzQjUnRkYuU0RPX1o1PlhKcU1bSjRSLWYrYTsoNkljcVQnPUp1RCY9TThPMVpSZk9rRFluSGsuJF8/U0xOK2kwWGJOaSgiXGMrcUQ9WkRoIzI8JEopImhZaEVgSztJNFkiKWkoNWFjKDo0c04jbXQuaWhCLzBrL0JdYFYicXJbSkplYEdQRGI+Mm1WblIiOU9gXGBOYUxVY0sua1crP0w0V3Eyc0ExZF5lMlQ+aERJaHFnQ1FwcWBSTi5dNWJxVlg1T1BLYFNfZyglZSY8bGgubCZRTy8sLVhsNSIhbSM3WjNRQiF1MiRwZC9nLklmV1EvayM8WS9RaDImJV9jXCEvYF9WLE51REFvTTVfMCZrdU9HbWJcbyZSdCs0YU5YLjgrTCY7SFc1Vyk5UkxrWXEpSGsqNGdhJTlIYGtOIVdGNWdWVDVbXE5cJ3E3c3FQW0IpWE1kXXMwNmMiNV5xMCcyISMpRXM5ZWo1Pzo2aE0wUUJXYVAoIU1SdVx0a2p1ZEonVWRCKVdIRSsmKVlSNClEPjgqRT5uOj9HXGQtTztScD5ycF09TjpUTi4rUzxWbzI9S3I1RFFCQ15qIjhSZV07M2VtdSgmWE1fdUI9Tl8lR2I5aWxlWj9jT1I9SSYra2ZRQF1bQGhOTFhbIkk0Jl1mZyIvPHFoYVsmOz1BZllpT21OUjU/ZG9LP2JqLzI3ZEZmV0E6MHREaD1zJiM8UkkkXmchQ2dLck5paj4wLVArOGtsTCxZRlcrRU8zPGlHSzkmUWlRc2hLNUFTdCtEMV9ycCs4bDJ1UjxvZjlrM0spNWlJayNJIiJPRyktSHNqZ0FaL0FtXnJzLyw7IVZmSj40JXBTVlhBcEY3ZyVhRSRHcGNwcTY4O09xPT50OTEkJDI3W0dUV04+XHEySENhOEEtazRMMCpubmRRcyJQSzhFY1NjJ3U7IWo5OWNWPichJmFaZWdhLW9nUmtuNFZqPnIoY0BhNGxAWmpdK2p0KkhMW0I0LUlMbDoyYEgvXEw8QCdJKEo6VShLKXNYX1xoXmBjYlxxXUVhYWZSZU9cOForYW1YNi5aIiZnaEA8L0lMTlBmSWtLV2dFRC90OkVFbHVTYWg6Li1sSE8nISI+VTtMdSI+LU0iY08qJnRcU3VYaGw5ZSEtNys/VT88RVs8R0xpVU8+XHBnVlcpL19pX0MhW19dOi1tIyttR0lqOHIvUWhfSGkkMEBdVlFeLDNQQ2VWMi10Q3JkS0xYJ1VrWSttWipBOEw4JEVwN0AvSUdlbEs6a2IobDA+TSU6PEQ8cEQxYV9TZz8lOEdKNDd0LlIscXBxVnUtTmppI0IxUlUvbzEycytJZSsnUFphUDhxQTpVT00hZlEuOkUoZiZbaiI1amJJIz9nLDVeQm1RQUVvP28qJ05JPSFjSl5XMFtMRiNYVSJjVmVlRWdLT0k8V1hQWEk9bzVSSm8pQmknXUtXcTRTLkdtTW5Hb2UnZSk2YU1OKiVkbkdPbF8lPS1nLV07UmhgME1NOTFrMm5uYSE6PkZ1ZElKcF5qbzheKGAqLi5wYT8oZDQyPz1ULy8waWJuRFxNRHVbN01jJm06Ljk6TGg4QiNUIT0rWXJTZjIyV1EvaU80NldqWnVwKmJwJyw5OElBNmI9S2xsLS9JRDsrWjUsLj9WMiVPMUNBdVZMXG1CLkhVZSxcW1slXSFwLTEuWSNMMzY5JypqTUw+SSpXO0YhZSZAW0pvVjI8OGdOblZUQ0JqKSF0I00hJGJBOXBxdFw3bVNcL0xfJExeXkldbjZfPEQuLjEvLzQvK0lRL1giIzhsPmNqPzJYX10vJi05aUpVW0graFk+bTkkbDMuTGQ3Qz9sJFxzaUNXcCcjSUkuSURIRCNDXWAnbSJfUmRvLTU7UnU0PVhcUkk8YF1gZGVyYWJya1xcayVDbXRfYEFIRm9aRkJzRUxIdDsjVWM+Mk90YVllZ19aRGpCX0ddUiEoaDdAaCFOamhxdVBLJGM5aj0obUBpa21CdD4nYilbJUUiXyFIKFwhaGFkJFNcW1tnXFdUNEFMXmUmaElYTF9gW0VEOzBZXXIiWlozXCIqM0lJSlg/NiNJQHBfSEsxcFlSTi8kUTktMFY0QkZuXF5jSixiLj5wJytuTTw6PjxyTFBOWWY+RS8iWSVsUj08ZjEsVSRQSCloSTJfayNDV2pzbnBHLiEoMVktdV0tL0htczpvY2BRSzM2N2xuQlQ8Mj5mXkIqIlRUdVo7V2NERS9DMU4wSiRwWWg8VF11XVNPZTJvTmtQZyw/NW4nL2NaYVUqayI8MzI5amM1W2JMbCQhR080YzBGLG1wVV1eY3QmPzAyWFIzL0Ajc1Bwazo3S3FSP2Y9LHUnXGpUJmNiRTNXPCFgX2RXQXImciUiTE5yTFlsQElqXDs3Wic+R1BpSFcqMTVzMF1yX1JzY0VJJTNKTChHKiY+L05DakY3UjRiZSQvJ0JsZHVFTzZuIVhbWWA1XyVjSlZbRzBKZEVeYE9FJnIoMiIraFloRWkoI1gyKkVNNF4tUFM4JlEoQGQzUGhYaGIrQyMxK18sLjI3QklgYFA1PmpuN2hRLF9DbTY7IVRgXT1UZHJoKDxePkAjN1s7MSgqN0kyMjlmKkglTlouVyhBaFIuN0UhL2Y5IjZeL3BpPCM5QG5vRjJqaFlMRUkjPiVSYzxvQjUlcjpMXCpBUTxqUDMoYTJLLFt0JC01aDw4aj9TOFkkXmMkS2sqQVZwckJSQFBATTZyT0FkUl0nO1tNWF4nVj9RRkZxWlVyN1JdSmVcXjBjZ0w0MWBES0ZFPVNPaWxBYmphIWlcUTdMcExLMV51VE9Pbl1eVmBUZmEzX1VFLGRbM1c4dTFzN0NCIzJuMEQ+T2FESHExLkBNYENabCM6Q1tNJ2gsMzFZWnMpNCxkayVFKi9QNmtyTiU4Sm5GSi1tYD1AL2d0Km86cV8sU1ciWDN+PmVuZHN0cmVhbQplbmRvYmoKMTEgMCBvYmoKPDwKL0ZpbHRlciBbIC9BU0NJSTg1RGVjb2RlIC9GbGF0ZURlY29kZSBdIC9MZW5ndGggMTY2MAo+PgpzdHJlYW0KR2F1YFI/I1NJVyY6RGctZlM9N2ddZk4vPWI/cmwhSHNNZ1g4XmxCVlRLbGcjTTNjZ2NVZT1VKnJVNFlxOFdGYE9RUS5WQ0BESjBYT3VvMilTUmsyNDUqPms/OTs5PFFeJic9Uy4mUTZmVSpOOUNIOzVqOl4kZztGMVVFXyNZU1o9Zz4lMD5cVUg3OkooUFtCSV1YPWdOSjpTaSNgc0YncWQ1WzBfNk9OWmVEXSY1PDRtbzZCQk5lbGdSJWdQIWlqUzJJXC5oUWFQdWNkZUM/Xj1BUT8xbFlhWy1CJ2heR0EuMmAxSiZkbSUrNDpcYF40a2sxWW1ga0Y8aGhDLmBNIU1fU0VMPmAtSWFaLDZnOnJHWjdgWSRWPjRqSC8wITRjJ1EnU2dacmY1V3BHSzgiTEtxSEwzaDRpI0YqSytTUlE7OWUiTFMmJyduMTptUGgrZDQ+REteOzNIRTEyPmUjTnJgYzJLWyRvPllzVEUpQGhWRlVOJHUrJzA7YWNfPmU9QGY/NjJ0TyMmcl4vRTdVIlspdDZWLkg/LGxqKkYvPE9JXkdKPUxxNFJKT1NMZihnMmtmQy46ZWkoPTI1TU1OZWpvQTRFS0ckUyRGSV9fbFU4PDNTdWxvOVE/SzMxWiQzcmJncFI0c1dQKklacmt1K0xdK10kWyY4QFdDaj5saEkhJlxCblRjb1ZqbUVrXEEjalhKMzZpI2Y/ZTc4VW5nM2FRXjJEVDFxWCI/PVZUKipQZj9BdCFqJzEyQStAP1VFKTdzTilqLC46cW9Ub2w0Q2hILF02I2tHSHEiPyVTSTZEVSF0TmhjZCExOjsxJVJmcTY/O00+ZW9kKiQrQHVlUXBfazlCSTFKWkZQVCl0VkpnbEdialsrJGkxLHUuODM+NlxnSi00WllORGQ2RztyanFtJm0zOFdOOS1tLClrKEtcNnJAWjlKaylsOWVtN19WaCpKJDhzMCcmQEVrdFljNltAaTktK0phU1JtcV5ZPUszKixMckxCWlUnOSJILDFsOyJLQDYvUERGVCo7NSsmVUo9XiVjQ0FfWFJhRlFtSidiZC9uRy5DakBjYWgoQmdyXzhbPmdidU5aVmcybCdrRDg/XnIiXV9vaE5HZWNjMHIwRFlfWEllaCEkQF5pYEdiUElBTDJMVjREZ1tOWEZOZDdIbDpVS08oZylXcHBFL0VnYVQuYmQ4ampCZC9mZT4mbygtWTI7QCxZcF4lI10udC0yP0dcLTxcIlk6cE5mOU5GQTdWYE1cZjdMR1JcXHRmclNMXyNiTkduSDprYVUyX1JTaSk7U2NxRS5cdU4mJ1ghYHBtazV0Imc+LEFpT0woXEAxM0hwLSdSJFcvOTw/IjZgbF1ZZyRmYDhBUm8iU2txR21MXFdqMTpcQG9PcCNbOXE7JzUjZksuImMuM2peJEhzUGhLPzlpb3M0UUZIKS1mInFyP00obmhMUSM3UD9pJ21rMy9pV0MiaUpONT8nMUFPOVY/YikhSU0qJkdjT09wWWswbGxVOW5FYHEjYF86Y0dZbz9HOjxVIyQwYkU0bEZZJThYJDFbX2RPUEtsckYjKEBcW21MYF4xMDQtdD9aOVs7MmVJO2Mqc2dLXEZMOCRUMVo1NTRKYHIpNUU1NThKZT9QYTF0ZE5UVjFzSU1kYjo7NChhNXE4MGowVz41bExESzszVW5aIkhsR2IoZzNmQm0wTSE8RyhmYjdmZl9ucDcuWWByL24mODMycyZAJzA7ZVAkbjoxVk0vL0xvIVtYLG9PaG5wRVxvZURAVFFlPWVsZDQvW3MmaWdYTyRvRmdrKkc3aCJHJ0s5MFZYT1A/S0wjbD4lUVg/SF1qai9aRDQ6aEVNPDBkOEBnMG4hMVtXYWgpWHUjV0w/KHMlcExsUzM7OGRkW0lOWWk5VzZqaTIxS1xfLlgqb05Mamo6LWNdU1MlXTNrXDBFN1VDQTJuSyYjSldwRXIzLXVyaUVWImsqcl5VUGgzMzspJDBWSGslJm9vQV9kKnBKIzQkVTJuKWhCcUBiMkxgJT04IzQoQ1ZNXDIpJy8hWFU6PnNccmE3NlUlT109SWYnTjRPJ2ZwJWlWQEtccTA1TidrUCVQJ2hHRkAhUjs4Zy1UV25tci1wQlcyZyJEVCJSRVRaWWBZSDA+TDxhcCgodE1JY0BaMiYxX09eQ1BCPDNMWGlYWlVLaEVQbXJwMWp+PmVuZHN0cmVhbQplbmRvYmoKeHJlZgowIDEyCjAwMDAwMDAwMDAgNjU1MzUgZiAKMDAwMDAwMDA2MSAwMDAwMCBuIAowMDAwMDAwMTEyIDAwMDAwIG4gCjAwMDAwMDAyMTkgMDAwMDAgbiAKMDAwMDAwMDMzMSAwMDAwMCBuIAowMDAwMDAwNDA4IDAwMDAwIG4gCjAwMDAwMDA2MDIgMDAwMDAgbiAKMDAwMDAwMDc5NiAwMDAwMCBuIAowMDAwMDAwODY0IDAwMDAwIG4gCjAwMDAwMDExNDQgMDAwMDAgbiAKMDAwMDAwMTIwOSAwMDAwMCBuIAowMDAwMDA0MTMxIDAwMDAwIG4gCnRyYWlsZXIKPDwKL0lEIApbPDI4MDQ5MzMyZWUxMmM3NjI1OGRlYjE2YTg3Y2I5NzAwPjwyODA0OTMzMmVlMTJjNzYyNThkZWIxNmE4N2NiOTcwMD5dCiUgUmVwb3J0TGFiIGdlbmVyYXRlZCBQREYgZG9jdW1lbnQgLS0gZGlnZXN0IChvcGVuc291cmNlKQoKL0luZm8gOCAwIFIKL1Jvb3QgNyAwIFIKL1NpemUgMTIKPj4Kc3RhcnR4cmVmCjU4ODMKJSVFT0YK" download="Ayushi_Goel_Resume.pdf">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 16l-5-5h3V4h4v7h3l-5 5zm-7 4h14v-2H5v2z"/></svg>
         Download PDF
       </a>
@@ -1918,72 +1936,79 @@ nav {
       <p class="resume-section-label">Professional Experience</p>
 
       <div class="resume-company">
-        <div class="resume-company-header">
-          <span class="resume-company-name">Springboard</span>
-          <span class="resume-company-dates">July 2019 – Present</span>
-        </div>
-
         <div class="resume-role">
           <div class="resume-role-header">
-            <span class="resume-role-title">Head of Project Management</span>
+            <span class="resume-role-title">Head of Project Management, Springboard</span>
             <span class="resume-role-dates">May 2025 – Present</span>
           </div>
 
           <div class="resume-subgroup">
-            <div class="resume-subgroup-title">New Partnerships</div>
-            <ul class="resume-bullets">
-              <li>Accountable to launch and scale new partnerships without prior playbooks.</li>
-              <li>Support proposal creation with Director of Learning Experience, GM, and Head of Partnerships.</li>
-              <li>Primary accountable for on-time and on-quality launches.</li>
-              <li>Responsible to drive on-time completions, job placements, and NPS.</li>
-              <li>Currently accountable to launch and scale Allied Health and Artificial Intelligence portfolios, contributing to ~70% of the company's revenue.</li>
+            <div class="resume-subgroup-title">New Partnerships — Setup and Launch</div>
+            <ul class="resume-bullets resume-bullets-structured">
+              <li><strong>Role:</strong> Direct Springboard's most critical partnership setups and launches from scratch; design end-to-end launch processes, serve as central Executive liaison across organizations, orchestrate collaboration between GTM and technical teams, and co-develop business proposals to land new deals.</li>
+              <li><strong>Impact:</strong> Deliver on-time and on-quality launches for 3 revenue-critical clients, enrolling ~500 students and generating $2.36M+ in revenue.</li>
+              <li><strong>Skills:</strong> 0→1 builder mindset, systems thinking, problem solving</li>
             </ul>
           </div>
 
           <div class="resume-subgroup">
-            <div class="resume-subgroup-title">Platform Upgrade</div>
-            <ul class="resume-bullets">
-              <li>Responsible to drive cross-functional collaboration between technical and business teams to ensure feature launches without any disruption to customer experience.</li>
+            <div class="resume-subgroup-title">New Partnerships — Delivery and Scale</div>
+            <ul class="resume-bullets resume-bullets-structured">
+              <li><strong>Role:</strong> Drive delivery and scaling operations, comprehensive client communications strategy and implementation, technical collaborations across multiple organizations, and complex change management while dynamically adapting strategies to deliver seamless, white-glove client experiences.</li>
+              <li><strong>Impact:</strong> Achieve 100% Exam Pass and Externship Match rates, with NPS >70 across all offerings.</li>
+              <li><strong>Skills:</strong> 1→10 scaling, strong written and verbal communication, appetite for ambiguity, cross-functional leadership</li>
             </ul>
           </div>
 
           <div class="resume-subgroup">
-            <div class="resume-subgroup-title">Company-Wide Launch Calendar</div>
-            <ul class="resume-bullets">
-              <li>Accountable to collaborate with Directors and GMs to propose and finalize annual launch rhythm while taking resourcing into account and flagging deficits and risks in advance.</li>
-              <li>Drive negotiation meetings with the Exec team in conflicting scenarios; prepare proposals and make recommendations based on effort and impact analysis.</li>
+            <div class="resume-subgroup-title">Company's Portfolio Launch Calendar</div>
+            <ul class="resume-bullets resume-bullets-structured">
+              <li><strong>Role:</strong> Create and maintain the company's launch calendar while remaining directly accountable to the CEO; raise tradeoffs, provide data-driven recommendations, and lead cross-Exec negotiations to maximize portfolio revenue outcomes while balancing team resourcing and preventing burnout.</li>
+              <li><strong>Impact:</strong> Establish the launch calendar as the single source of truth across the company for all critical dates and deliverables, serving as the key input for pre-planning and resourcing discussions.</li>
+              <li><strong>Skills:</strong> Executive-level stakeholder management, high agency</li>
+            </ul>
+          </div>
+
+          <div class="resume-subgroup">
+            <div class="resume-subgroup-title">Team Management</div>
+            <ul class="resume-bullets resume-bullets-structured">
+              <li><strong>Role:</strong> Build and lead a small yet highly effective team with intentional hiring; after 4 years of scaling B2B operations from scratch, recently hired a new team member to accelerate AI vertical growth.</li>
+              <li><strong>Impact:</strong> Hold accountability for launching and scaling new partnerships across Allied Health and Artificial Intelligence verticals, contributing to ~70% of company revenue and on track to reach 100% contribution by end of 2027.</li>
+              <li><strong>Skills:</strong> Strategic team scaling, high-impact hiring, coaching, and organizational leadership</li>
             </ul>
           </div>
 
           <div class="resume-subgroup">
             <div class="resume-subgroup-title">Agentic AI</div>
-            <ul class="resume-bullets">
-              <li>Using Claude, agentified end-to-end post-meeting management, increasing efficiency, accuracy, and on-time completions across cross-functional teams.</li>
-              <li>Vibe Coded an interactive central enterprise portfolio database using Claude; now the single source of truth widely adopted across the organization.</li>
+            <ul class="resume-bullets resume-bullets-structured">
+              <li><strong>Role:</strong> Successfully agentify end-to-end post-meeting management workflows using 3 Claude Agents that automatically convert meeting notes into actionable items, sync them to Asana, and send overdue DMs and reminders on a regular cadence.</li>
+              <li><strong>Impact:</strong> Increase on-time task completion rates from 70% to 90% while saving ~5 hours per week by delegating administrative overhead to AI agents.</li>
+              <li><strong>Skills:</strong> Agentic AI implementation, Claude-powered automation</li>
             </ul>
           </div>
         </div>
 
         <div class="resume-role">
           <div class="resume-role-header">
-            <span class="resume-role-title">Senior Project Manager</span>
+            <span class="resume-role-title">Senior Project Manager, Springboard</span>
             <span class="resume-role-dates">Nov 2021 – Apr 2025</span>
           </div>
-          <ul class="resume-bullets">
-            <li>As the sole project manager across the board, launched 20+ programs across 19 enterprise partners; coordinated cross-continental teams of 40+ and delivered on-time, on-budget launches that drove $16M+ net revenue, 142% YoY growth, and 33% cycle time reduction.</li>
-            <li>Led platform migration strategy as a core team member with VP of Product, Chief Architect, and Director of Engineering; designed and executed phased rollout and portfolio transfer strategy, ensuring seamless implementation across the organization.</li>
-            <li>Built a 300-setting configuration playbook from scratch to eliminate systemic launch failures; reduced weekly cross-team fires to near-zero in 4–6 weeks and scaled the framework across multiple business units.</li>
-            <li>Architected a repeatable decision framework to influence without authority at CEO, VP, and Senior Director levels on tradeoffs between speed, quality, and scope; OKR-mapped scenario analyses enabled executive decisions with velocity.</li>
+          <ul class="resume-bullets resume-bullets-structured">
+            <li><strong>Role:</strong> Spearheaded program delivery as the sole Project Manager, leading a team of 40+ technical and GTM members to launch Springboard's B2B vertical while scaling Consumer and University verticals; served as core team member on the enterprise platform migration strategy alongside VP of Product, Chief Architect, and Director of Engineering, then converted the entire process into a comprehensive configuration playbook to eliminate systemic launch failures.</li>
+            <li><strong>Impact:</strong> Launched 20+ programs across 19 enterprise partners; coordinated cross-continental teams of 40+ and delivered on-time, on-budget launches that generated $16M+ net revenue, achieved 142% YoY growth, and delivered 33% cycle time reduction (from 12 to 8 weeks).</li>
+            <li><strong>Skills:</strong> Enterprise platform migration, technical &amp; non-technical stakeholder liaison, partner accountability management, influencing without authority</li>
           </ul>
         </div>
 
         <div class="resume-role">
           <div class="resume-role-header">
-            <span class="resume-role-title">Program Associate</span>
+            <span class="resume-role-title">Program Associate, Springboard</span>
             <span class="resume-role-dates">July 2019 – Oct 2021</span>
           </div>
-          <ul class="resume-bullets">
-            <li>Spearheaded Go/No-Go research across Data Science and AI/ML verticals; built and secured executive approval for a new product strategy. Hired 20+ technical experts.</li>
+          <ul class="resume-bullets resume-bullets-structured">
+            <li><strong>Role:</strong> Spearheaded Go/No-Go research and analysis across Data Science, Design, and AI/ML verticals; developed and secured executive approval for a new product strategy while hiring and onboarding 20+ technical experts.</li>
+            <li><strong>Impact:</strong> Supported the Director of Programs to successfully launch and scale the Design vertical in India, achieving consistent 4+ CSAT scores across the program experience.</li>
+            <li><strong>Skills:</strong> Strategic research &amp; analysis, product strategy development, talent acquisition, client success</li>
           </ul>
         </div>
       </div>
